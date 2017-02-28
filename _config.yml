@@ -1,0 +1,40 @@
+# Site settings
+title: 
+SEOTitle: 
+header-img: 
+description: ""
+keyword: ""
+url: ""              # your host, for absolute URL
+baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
+environment: 'pro'
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 6
+pagitnate_path: "/news/page:num"
+category_dir: ""
+category_layout: "index.html"
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md", "Gemfile", "Gemfile.lock"]
+anchorjs: true
+gems:
+  - jekyll-paginate
+  - jekyll-multiple-languages-plugin
+  - jekyll-paginate-category
+languages: ['it',"en", "zh"]
+exclude_from_localizations: ['css', 'img', 'fonts', 'js', 'static', 'Gemfile', 'Gemfile.lock', 'npm-debug.log']
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown 
+markdown: Lazyretina
+kramdown:
+  input: GFM                            
+# use Github Flavored Markdown !important
+# Analytics settings
+# Baidu Analytics
+ba_track_id: 'c3fc3b8cd7a4c51920b20de4a6ff30cb'
+# Google Analytics
+ga_track_id: ''            # Format: UA-xxxxxx-xx
+ga_domain: ''
